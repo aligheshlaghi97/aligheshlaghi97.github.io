@@ -1,0 +1,70 @@
+.about-section {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.container-header-about-me {
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+.container-header-my-skills {
+  margin-top: 0%;
+  margin-left: 3%;
+}
+
+.container-about-me {
+  margin-top: 2%;
+}
+
+.skills-ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 24px;
+}
+
+.experience {
+  margin-top: 50px;
+}
+
+.skills-section {
+  font-size: 20px;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.skills-rows{
+  /*justify-content: center;*/
+  display: flex;
+  -ms-text-justify: inherit;
+  margin-top: 50px;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.circle-custom {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background-color: #d3c178;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  margin-left: 18%;
+}
+
+.skills-list {
+  margin-top: 40px;
+}

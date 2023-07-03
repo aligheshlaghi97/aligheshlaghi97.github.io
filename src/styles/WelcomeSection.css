@@ -1,0 +1,67 @@
+.container {
+  margin: 0 auto;
+}
+
+.skills ul {
+  list-style-type: none;
+}
+
+.experience {
+  margin-top: 20px;
+}
+
+.hi-name-text {
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30%;
+  margin-top: 5%;
+}
+
+.welcome-text {
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+
+.programmer-img  {
+  height: 100%;
+  width: 100%;
+  opacity: 100%;
+  background-image: url("../media/img/programmer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.know-more-button {
+  height: 50px;
+  width: 160px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  text-align: -webkit-match-parent;
+}
+
+.know-more-rows{
+  /*justify-content: center;*/
+  display: flex;
+  -ms-text-justify: inherit;
+  margin-left: 20%;
+}
