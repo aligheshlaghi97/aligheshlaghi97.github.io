@@ -26,11 +26,11 @@
   margin-bottom: 10%;
 }
 
-.programmer-img  {
+.background-landing-page  {
   height: 100%;
   width: 100%;
   opacity: 100%;
-  background-image: url("../media/img/programmer.jpg");
+  background-image: url("../media/img/dark-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

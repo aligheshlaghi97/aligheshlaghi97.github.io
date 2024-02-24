@@ -25,7 +25,7 @@ const WelcomeSection = () => {
   }, []);
 
   return (
-    <div className="programmer-img" id="home">
+    <div className="background-landing-page" id="home">
       <Container className="container" >
         <Row>
           <Col>
