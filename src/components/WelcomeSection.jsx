@@ -27,32 +27,35 @@ const WelcomeSection = () => {
   return (
     <div className="background-landing-page" id="home">
       <Container className="container" >
+        <Col>
+          <Row className="hi-name-text">
+            <div className={`${isVisible ? 'animate-fade-in' : ''}`}
+                   ref={textRef}>
+              <div className="hello-text">
+                <p>Hello, I'm
+                  <p1 className="first-last-name"> Ali Gheshlaghi.</p1>
+                </p>
+              </div>
+              <p className="intro-text">I'm Backend Developer Interested in Finance.</p>
+            </div>
+          </Row>
+        </Col>
         <Row>
+          <Col className="welcome-text">
+            <div className={`${isVisible ? 'animate-fade-in' : ''}`}
+                 ref={textRef}>
+              <div className="know-more-rows">
+                <p>Welcome to my personal website</p>
+                <p>Scroll to see more</p>
+              </div>
+            </div>
+          </Col>
           <Col>
-            <div className="hi-name-text">
-              <div className={`${isVisible ? 'animate-fade-in' : ''}`}
-                   ref={textRef}>
-                <p>Hi</p>
-                <p>I'm Ali Gheshlaghi</p>
-              </div>
-            </div>
-
-            <div className="welcome-text">
-              <div className={`${isVisible ? 'animate-fade-in' : ''}`}
-                   ref={textRef}>
-                <div className="know-more-rows">
-                 <div>
-                    <p>Welcome to my personal website</p>
-                    <p>Scroll to see more</p>
-                 </div>
-                 <Button variant="primary"
-                         className="know-more-button"
-                         size="lg"
-                         href="#about">Know more</Button>
-                </div>
-              </div>
-            </div>
-
+            <Button variant="info"
+                    className="know-more-button"
+                    size="lg"
+                    href="#about">Know more
+            </Button>
           </Col>
         </Row>
       </Container>

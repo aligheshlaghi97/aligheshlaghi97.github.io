@@ -14,16 +14,35 @@
   font-size: 50px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 30%;
+  margin-bottom: 15%;
+  margin-top: 50%;
+}
+
+.hello-text {
+  margin-bottom: 10%;
   margin-top: 5%;
 }
 
 .welcome-text {
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   color: #ffffff;
   margin-top: 30%;
   margin-bottom: 10%;
+}
+
+.first-last-name {
+  font-size: 50px;
+  text-align: center;
+  color: #d3c178;
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+
+.intro-text {
+  font-size: 30px;
+  text-align: center;
+  color: #efefef;
 }
 
 .background-landing-page  {
@@ -51,17 +70,16 @@
 }
 
 .know-more-button {
-  height: 50px;
-  width: 160px;
   margin-top: 5%;
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
   margin-left: 20%;
+  color: #aaaaaa;
   text-align: -webkit-match-parent;
 }
 
 .know-more-rows{
   /*justify-content: center;*/
-  display: flex;
+  /*display: flex;*/
   -ms-text-justify: inherit;
-  margin-left: 20%;
+  /*margin-left: 20%;*/
 }
