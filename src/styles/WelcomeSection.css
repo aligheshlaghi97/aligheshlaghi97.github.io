@@ -20,15 +20,16 @@
 
 .hello-text {
   margin-bottom: 10%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .welcome-text {
-  font-size: 25px;
+  font-size: 27px;
   text-align: center;
   color: #ffffff;
   margin-top: 30%;
   margin-bottom: 10%;
+  margin-right: -5%;
 }
 
 .first-last-name {
@@ -71,8 +72,7 @@
 
 .know-more-button {
   margin-top: 5%;
-  /*margin-bottom: 5%;*/
-  margin-left: 20%;
+  margin-left: 45%;
   color: #aaaaaa;
   text-align: -webkit-match-parent;
 }
@@ -81,5 +81,5 @@
   /*justify-content: center;*/
   /*display: flex;*/
   -ms-text-justify: inherit;
-  /*margin-left: 20%;*/
+  margin-left: 30%;
 }
