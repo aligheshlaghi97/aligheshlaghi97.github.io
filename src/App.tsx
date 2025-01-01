@@ -1,19 +1,18 @@
-import React from 'react';
-import './styles/AppSection.css';
+import React from "react";
+import "./styles/AppSection.css";
 import WelcomeSection from "./components/WelcomeSection";
 import AboutSection from "./components/AboutSection";
 import AppNavbar from "./components/AppNavbar";
-import ProjectsSection from "./components/ProjectsSection";
-
+import BlogsSection from "./components/BlogsSection";
 
 const App = () => {
   return (
-      <div className="app-section">
-        <AppNavbar/>
-        <WelcomeSection/>
-        <AboutSection/>
-        <ProjectsSection/>
-      </div>
+    <div className="app-section">
+      <AppNavbar />
+      <WelcomeSection />
+      <AboutSection />
+      <BlogsSection />
+    </div>
   );
 };
 

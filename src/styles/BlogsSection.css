@@ -1,4 +1,4 @@
-.container-projects {
+.container-blogs {
   background-color: #efefef;
   margin-top: 50px;
 }
@@ -15,21 +15,22 @@ section {
   text-align: center;
 }
 
-.projects-section {
+.blogs-section {
   text-align: center;
 }
 
-.header-projects {
+.header-blogs {
   margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
+  color: #5e4c0b;
 }
 
 .nav-btn-custom {
   color: #0e0e0e;
 }
 
-.projects-title {
+.blogs-title {
   color: black;
   text-align: center;
 }
