@@ -1,10 +1,10 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, JSX } from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import "../styles/WelcomeSection.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const WelcomeSection = () => {
+const WelcomeSection = (): JSX.Element => {
   const textRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,10 +33,10 @@ const WelcomeSection = () => {
                    ref={textRef}>
               <div className="hello-text">
                 <p>Hello, I'm
-                  <p1 className="first-last-name"> Ali Gheshlaghi.</p1>
+                  <span className="first-last-name"> Ali Gheshlaghi.</span>
                 </p>
               </div>
-              <p className="intro-text">I'm Backend Developer Interested in Finance.</p>
+              <p className="intro-text">I'm a Python Backend Development Expert.</p>
             </div>
           </Row>
         </Col>
