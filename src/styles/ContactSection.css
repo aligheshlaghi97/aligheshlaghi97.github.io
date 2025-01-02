@@ -1,0 +1,59 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; /* Space between buttons */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+}
+
+.contact-gmail {
+  background-color: #db4437;
+}
+
+.contact-gmail:hover {
+  background-color: #c33c2e;
+}
+
+.contact-github {
+  background-color: #333333;
+}
+
+.contact-github:hover {
+  background-color: #242424;
+}
+
+.contact-linkedin {
+  background-color: #0077b5;
+}
+
+.contact-linkedin:hover {
+  background-color: #005f92;
+}
+
+.contact-button i {
+  font-size: 1.5rem; /* Default icon size */
+}
+
+@media (min-width: 1024px) {
+  .contact-button i {
+    font-size: 2rem; /* Larger size on laptop screens */
+  }
+}
