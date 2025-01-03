@@ -16,7 +16,11 @@ const BlogsSection = () => {
         <div className="blog-grid">
           {blogs.map((blog) => (
             <div key={blog.id} className="card card-section shadow-lg">
-              <img src={blog.image} className="card-img-top" alt={blog.title} />
+              <img
+                src={`/blogs/${blog.id}/img.png`}
+                className="card-img-top"
+                alt={blog.title}
+              />
               <div className="card-body">
                 <h5 className="card-title">{blog.title}</h5>
                 <p className="card-text">{blog.text}</p>
