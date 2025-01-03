@@ -1,0 +1,5 @@
+I’ve always been fascinated by what makes Python work under the hood, especially coming from a background in C. Recently, I explored 'CPython Internals' by Anthony Shaw (and Real Python team), and it offered a deep dive into how Python interprets and compiles code into machine code before executing it. Some of the key concepts that caught my attention were Python's memory management, parallel programming and objects/types. These topics were not only insightful but also essential for writing efficient Python code. I’ll be sharing more about these concepts in the coming weeks.
+
+For developers coming from a C background—or from non-software fields like mine—writing efficient Python code can be challenging at first. However, by understanding CPython’s internals, you can write more optimized and intentional code. This awareness transforms those early challenges into strengths, helping you evolve as a developer and build a more efficient, robust coding practice.
+
+Image credit and C tutorial for Python developers: https://realpython.com/c-for-python-programmers/

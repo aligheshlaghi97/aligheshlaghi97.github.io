@@ -1,0 +1,10 @@
+Boosting Async Performance in Newer Python Versions 🚀 
+
+Recent Python releases include some documented enhancements for asynchronous programming! In this documentation link https://aligheshlaghi97.github.io/asynchronous-python/chapter6/ , I showcase practical examples that apply these features and achieve significant async speedups:
+
+1. Eager Task Creation: In Python 3.12, eager_task_factory speeds up asynchronous task handling by at least 4x compared to traditional gathering methods, ideal for high-load systems needing fast task creation.
+
+2. Faster asyncio.current_task Calls: Python 3.12 also optimizes asyncio.current_task calls by 4-6x, enabling quicker task tracking—something async frameworks will benefit from greatly.
+
+While these improvements were highlighted in CPython’s GitHub and official documentation, I haven’t seen many real-world implementations. Sharing these practical gains might be useful to those following asyncio advancements—Jason Brownlee, this may be of interest to SuperFastPython!
+Staying updated with new Python features can offer significant speedups for our workflows.

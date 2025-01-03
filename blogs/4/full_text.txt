@@ -1,0 +1,3 @@
+Memory management plays a crucial role in optimizing software performance. With my background in Python and C programming, and recent exploration of Python's internals, I’ve gained some interesting insights into how memory is handled in these two languages. Let's see C and Python's memory allocation approach.
+
+#Python #CProgramming #MemoryManagement #PythonInternals
