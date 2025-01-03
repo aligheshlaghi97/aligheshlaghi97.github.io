@@ -1,5 +1,4 @@
 import React, { JSX } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
 import "../styles/ContactSection.css";
 
 const ContactSection = (): JSX.Element => {
@@ -8,7 +7,6 @@ const ContactSection = (): JSX.Element => {
       {/* Gmail */}
       <a
         data-mdb-ripple-init
-        // className="btn btn-primary contact-button contact-gmail"
         className="btn btn-primary contact-button contact-gmail flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white shadow-md hover:bg-blue-700 transition-transform transform hover:scale-110"
         href="mailto:aliigheshlaghi97@gmail.com"
         role="button"
