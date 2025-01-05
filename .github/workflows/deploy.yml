@@ -9,6 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.12.0  # Set Node.js version to 22.12.0 (LTS)
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
