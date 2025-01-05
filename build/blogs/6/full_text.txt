@@ -1,0 +1,21 @@
+Recently, I had an insightful discussion with one of my coworker about the differences between two key methods of process creation in Python: fork and spawn. 
+
+Fork: Duplicates the parent process, inheriting its memory space.
+Spawn: Starts a new, fresh process, without sharing memory with the parent process.
+
+Fork
+The fork method copies the parent process’s memory, including variables, and works with copy-on-write (COW). This makes it efficient and up to 20 times faster than spawn, but it can be buggy, especially on macOS. Also, note that fork is not supported on Windows.
+Copy-on-write here mean that fork uses parent memory when reading but creates a copy of that memory when it needs to modify.
+
+Spawn
+The spawn method creates a fresh process, which starts execution from the very beginning. This method is slower but avoids the potential pitfalls of shared memory between parent and child processes.
+This is the default method to create a child process on Windows and macOS.
+
+
+In Python, switching between these methods is as simple as using multiprocessing and calling set_start_method('fork') or set_start_method('spawn'), depending on your needs.
+
+For those interested, I highly recommend checking out Anthony Sottile's video (https://www.youtube.com/watch?v=hzBtsDPJ1dM), Jason Brownlee's article (https://superfastpython.com/fork-faster-than-spawn/), and this (https://bnikolic.co.uk/blog/python/parallelism/2019/11/13/python-forkserver-preload.html) in-depth post by Bojan Nikolic for a more technical exploration of process creation in Python. 
+
+Image credit: Bojan Nikolic
+
+#Python #multiprocessing #asynchronouspython
