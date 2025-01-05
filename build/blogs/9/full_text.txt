@@ -1,0 +1,10 @@
+Python Performance Tip: Use `is` Instead of `==` for None, True and False Checks!
+
+When comparing to None, True and False, using `is` can speed up your code. Here’s a quick example using timeit.
+
+Results (for 10M repeats):
+`==`: 0.318 sec
+`is`: 0.214 sec (about 30% faster!)
+These small improvements add up, especially in larger codebases. Check out the code snippet below!
+
+source: https://deepsource.com/blog/python-performance-three-easy-tips
