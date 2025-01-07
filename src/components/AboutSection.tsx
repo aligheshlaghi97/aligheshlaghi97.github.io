@@ -26,7 +26,7 @@ const AboutSection = () => {
     <Container
       className={`${isVisible ? "animate-fade-in" : ""}`}
       ref={textRef}
-      id="about"
+      id="/#about"
     >
       <Row>
         <div className="container-header-about-me">

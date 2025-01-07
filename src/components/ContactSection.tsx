@@ -3,7 +3,7 @@ import "../styles/ContactSection.css";
 
 const ContactSection = (): JSX.Element => {
   return (
-    <div className="contact-container" id="contact">
+    <div className="contact-container" id="/#contact">
       {/* Gmail */}
       <a
         data-mdb-ripple-init

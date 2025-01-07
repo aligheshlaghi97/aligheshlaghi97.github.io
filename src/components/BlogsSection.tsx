@@ -7,7 +7,7 @@ const BlogsSection = () => {
   const blogs = JSON.parse(process.env.REACT_APP_BLOGS || "[]");
 
   return (
-    <div className="container-blogs" id="blogs">
+    <div className="container-blogs" id="/#blogs">
       <Container className="p-4">
         <Row>
           <h1 className="header-blogs">Recent Blogs</h1>
@@ -24,7 +24,7 @@ const BlogsSection = () => {
               <div className="card-body">
                 <h5 className="card-title">{blog.title}</h5>
                 <p className="card-text">{blog.text}</p>
-                <a href={blog.link} className="btn btn-primary">
+                <a href={`#${blog.link}`} className="btn btn-primary">
                   Read
                 </a>
               </div>

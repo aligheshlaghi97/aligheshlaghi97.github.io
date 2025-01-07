@@ -1,5 +1,10 @@
 import React, { JSX } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  HashRouter,
+} from "react-router-dom";
 import "./styles/AppSection.css";
 import WelcomeSection from "./components/WelcomeSection";
 import AboutSection from "./components/AboutSection";
@@ -22,7 +27,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         {/* Home route */}
         <Route path="/" element={<Home />} />
@@ -30,7 +35,7 @@ const App = () => {
         {/* Dynamic blog route */}
         <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 };
 

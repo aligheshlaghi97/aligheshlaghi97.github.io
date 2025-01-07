@@ -13,20 +13,20 @@ const AppNavbar = () => {
       sticky="top"
     >
       <Container>
-        <Navbar.Brand href="#home">Personal-Website</Navbar.Brand>
+        <Navbar.Brand href="#/#home">Personal-Website</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home" className="nav-btn">
+            <Nav.Link href="#/#home" className="nav-btn">
               <i className="fa-solid fa-house" /> Home
             </Nav.Link>
-            <Nav.Link href="#about" className="nav-btn">
+            <Nav.Link href="#/#about" className="nav-btn">
               <i className="fa-regular fa-address-card" /> About
             </Nav.Link>
-            <Nav.Link href="#blogs" className="nav-btn">
+            <Nav.Link href="#/#blogs" className="nav-btn">
               <i className="fa-solid fa-bars-progress" /> Blogs
             </Nav.Link>
-            <Nav.Link href="#contact" className="nav-btn">
+            <Nav.Link href="#/#contact" className="nav-btn">
               <i className="fa-regular fa-address-book" /> Contact
             </Nav.Link>
           </Nav>
