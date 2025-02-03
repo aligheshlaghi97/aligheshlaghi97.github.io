@@ -1,0 +1,9 @@
+TypeScript vs. Python: A Typing Perspective
+
+Over the last month, I’ve been having some fun with TypeScript, exploring its typing system and how it contrasts with Python. This got me thinking about how TypeScript’s approach influences the way I see Python’s type system.
+In this article, I break down the differences between the two languages from three key perspectives:
+• Static vs. Dynamic Typing
+• Strong vs. Weak Typing
+• Structural vs. Nominal Typing
+Check it out, and let me know your thoughts!
+
