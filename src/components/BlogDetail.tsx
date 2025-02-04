@@ -104,6 +104,9 @@ const BlogDetail = (): JSX.Element => {
           />
         </div>
       )}
+      <a href="#/#home" className={styles.btn}>
+        Back to Home
+      </a>
     </div>
   );
 };
