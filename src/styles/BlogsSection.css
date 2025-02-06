@@ -22,6 +22,21 @@
   height: 100%; /* Ensure all cards have the same height */
 }
 
+/* Mobile View Fix */
+@media (max-width: 768px) {
+  .blog-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-section {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
 .card-section:hover {
   transform: translateY(-10px);
 }
