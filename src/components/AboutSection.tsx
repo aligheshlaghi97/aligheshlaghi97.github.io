@@ -3,10 +3,12 @@ import { Container, Row } from "react-bootstrap";
 import "../styles/AboutSection.css";
 
 const AboutSection = () => {
-  const textRef = useRef(null);
+  const textRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    if (!textRef.current) return;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
