@@ -8,6 +8,7 @@ const WelcomeSection = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    if (!textRef.current) return;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {

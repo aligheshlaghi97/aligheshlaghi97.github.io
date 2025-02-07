@@ -3,6 +3,14 @@ import { Container, Row } from "react-bootstrap";
 import "../styles/BlogsSection.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+interface blogRecord {
+  id: number
+  category: string
+  title: string
+  text: string
+  link: string
+}
+
 const BlogsSection = () => {
   const blogs = JSON.parse(process.env.REACT_APP_BLOGS || "[]");
 
@@ -14,7 +22,7 @@ const BlogsSection = () => {
         </Row>
 
         <div className="blog-grid">
-          {blogs.map((blog) => (
+          {blogs.map((blog: blogRecord) => (
             <div key={blog.id} className="card card-section shadow-lg">
               <img
                 src={`/blogs/${blog.id}/img.png`}

@@ -3,10 +3,18 @@ import styles from "../styles/BlogDetail.module.css";
 
 import { useParams } from "react-router-dom";
 
+interface blog {
+  id: number
+  category: string
+  title: string
+  text: string
+  link: string
+}
+
 const BlogDetail = (): JSX.Element => {
   const { id } = useParams<{ id: string }>();
   const blogs = JSON.parse(process.env.REACT_APP_BLOGS || "[]");
-  const blog = blogs.find((b) => b.id === parseInt(id));
+  const blog = blogs.find((b: blog) => b.id === parseInt(id ?? "1"));
 
   const [blogContent, setBlogContent] = useState<string | null>(null);
   const [pdfExists, setPdfExists] = useState<boolean>(false);
