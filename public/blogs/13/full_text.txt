@@ -1,0 +1,15 @@
+When working with AsyncIO, a common issue arises: orphaned tasks—tasks that are running but have lost their reference, making them impossible to track or cancel. This is because `asyncio.create_task()` launches an unstructured task with no built-in mechanism for managing its lifecycle.
+
+🔴 Unstructured Concurrency (Orphaned Tasks)
+In a typical AsyncIO model, if you create a task and forget to track it, it can continue running in the background, potentially causing issues like memory leaks or unexpected behavior.
+
+✅ Structured Concurrency (Tasks with a Defined Scope)
+Starting with Python 3.11, `asyncio.TaskGroup` brings structured concurrency—tasks belong to a well-defined scope, ensuring they finish or are canceled together. Losing a reference becomes impossible.
+
+Moreover, AsyncIO alternatives are built around this design pattern:
+🔹 Trio has built-in structured concurrency from the ground up using `trio.open_nursery()`
+
+🔹 AnyIO provides a structured approach that works across multiple async frameworks, including AsyncIO and Trio.
+
+I've written a detailed article on this topic, exploring these concepts with code examples. Check it out here: https://aligheshlaghi97.github.io/asynchronous-python/chapter8/
+What are your thoughts on structured concurrency and how you handle orphaned tasks?
