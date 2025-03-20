@@ -1,0 +1,5 @@
+Queues vs. Channels in Concurrency
+
+The consumer-producer pattern is essential for managing data flow between tasks and processes. But did you know channels differ from queues?
+Swipe through to see how they work!
+hashtag#Concurrency hashtag#AsyncProgramming hashtag#Python
