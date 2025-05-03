@@ -1,0 +1,9 @@
+A few weeks ago, I started building a tool usable in financial market backtests — something lightweight to visualize backtest results from Python.
+
+I used AnyWidget (from Trevor Manz) to bridge Python with a custom frontend built using Vite, React, TypeScript, and TailwindCSS. One of the best decisions? Choosing lightweight-charts — it's incredibly efficient for large datasets without forcing you to manage pixels manually.
+
+And while I’m not a TypeScript expert, using AI-assisted coding helped me move faster and focus more on solving actual problems than boilerplate. It's been one of the most productive learning-by-building experiences I've had.
+
+I’ve open-sourced the project — if you’re into backtesting, data visualization, or just want to see how Python and frontend can play nicely together, give it a look!
+
+GitHub repo: https://github.com/Finance-Insight-Lab/bt-visualizer
