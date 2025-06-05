@@ -20,7 +20,7 @@ const BlogsSection = () => {
         <Row>
           <h1 className="header-blogs">Recent Blogs</h1>
         </Row>
-
+        <Row className="container-blogs">
         <div className="blog-grid">
           {blogs.map((blog: blogRecord) => (
             <div key={blog.id} className="card card-section shadow-lg">
@@ -39,6 +39,7 @@ const BlogsSection = () => {
             </div>
           ))}
         </div>
+        </Row>
       </Container>
     </div>
   );

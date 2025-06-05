@@ -94,10 +94,64 @@ section {
 }
 
 .header-blogs {
-  margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #5e4c0b;
+  color: #2c3e50;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+
+  /* Properties for big text (already good) */
+  font-size: 3.5rem; /* Large font size */
+  font-weight: 700;  /* Bold */
+  
+  /* Properties for underline effect, mirroring About Me's section-title */
+  position: relative; /* Essential for positioning the ::after pseudo-element */
+  display: inline-block; /* Allows positioning of the underline relative to text width */
+}
+
+/* The magic for the underline */
+.header-blogs::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Start in the middle */
+  bottom: -10px; /* Position below the text */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 200px; /* Width of the underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: #1abc9c; /* Accent color - use the same as your About Me section */
+  border-radius: 2px; /* Slightly rounded ends for the underline */
+}
+
+/* Responsive Adjustments for the header-blogs (similar to About Me) */
+@media (max-width: 992px) {
+  .header-blogs {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-blogs {
+    font-size: 2.5rem;
+    margin-top: 25px; /* Adjust spacing for smaller screens */
+    margin-bottom: 25px;
+  }
+  .header-blogs::after {
+    width: 70px; /* Adjust underline width for smaller screens */
+    bottom: -8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-blogs {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header-blogs::after {
+    width: 60px; /* Further adjust underline width */
+    bottom: -6px;
+  }
 }
 
 .nav-btn-custom {

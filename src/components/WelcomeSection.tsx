@@ -4,68 +4,62 @@ import "../styles/WelcomeSection.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const WelcomeSection = (): JSX.Element => {
-  const textRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const headingRef = useRef(null);
+  const introRef = useRef(null);
+  const buttonRef = useRef(null);
+  const [elementsVisible, setElementsVisible] = useState(false);
 
   useEffect(() => {
-    if (!textRef.current) return;
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setElementsVisible(true);
+          observer.disconnect();
         }
       });
-    });
+    }, observerOptions);
 
-    observer.observe(textRef.current);
+    if (headingRef.current) observer.observe(headingRef.current);
 
     return () => {
-      observer.disconnect();
+      if (observer) {
+        observer.disconnect();
+      }
     };
   }, []);
 
   return (
-    <div className="background-landing-page" id="/#home">
-      <Container className="container">
-        <Col>
-          <Row className="hi-name-text">
+    <div className="welcome-section-hero d-flex align-items-center justify-content-center text-center" id="/#home">
+      <Container>
+        <Row className="justify-content-center">
+          <Col md={10} lg={8}>
             <div
-              className={`${isVisible ? "animate-fade-in" : ""}`}
-              ref={textRef}
+              ref={headingRef}
+              className={`hero-content ${elementsVisible ? "is-visible" : ""}`}
             >
-              <div className="hello-text">
-                <p>
-                  Hello, I'm
-                  <span className="first-last-name"> Ali Gheshlaghi.</span>
-                </p>
-              </div>
-              <p className="intro-text">
-                I'm a Python Backend Development Expert.
+              <p className="hello-text">Hello, I'm</p>
+              <h1 className="display-3 first-last-name mb-4">
+                <span className="name-highlight">Ali Gheshlaghi</span>
+              </h1>
+              <p className="lead intro-text mb-5">
+                I'm a <span className="expertise-highlight">Python Backend Development Expert.</span>
               </p>
+              <Button
+                ref={buttonRef}
+                variant="primary"
+                size="lg"
+                href="#/#about"
+                className="know-more-button animate-button"
+              >
+                Know More About Me
+              </Button>
             </div>
-          </Row>
-        </Col>
-        <Row>
-          <Col className="welcome-text">
-            <div
-              className={`${isVisible ? "animate-fade-in" : ""}`}
-              ref={textRef}
-            >
-              <div className="know-more-rows">
-                <p>Welcome to my personal website</p>
-                <p>Scroll to see more</p>
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <Button
-              variant="info"
-              className="know-more-button"
-              size="lg"
-              href="#/#about"
-            >
-              Know more
-            </Button>
           </Col>
         </Row>
       </Container>
