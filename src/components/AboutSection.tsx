@@ -51,7 +51,6 @@ const AboutSection = (): JSX.Element => {
         <Row className="justify-content-center mb-5">
           <Col xs={12} md={10} lg={8} className="text-center">
             <h1 className="section-title">About Me</h1>
- 
           </Col>
         </Row>
         <Row className="justify-content-center">
