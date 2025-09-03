@@ -58,7 +58,7 @@ const AboutSection = (): JSX.Element => {
             <div className="about-content-card">
               <p className="about-paragraph">
                 I am a passionate <span className="highlight-text">backend Python developer</span> with
-                <span className="highlight-text">{yearsOfExperience}+ years of experience</span>,
+                {" "}<span className="highlight-text">{yearsOfExperience}+ years of experience</span>,
                 specializing in building high-performance, scalable web
                 applications. My expertise lies in Python frameworks like
                 <span className="highlight-text"> Django, FastAPI, and Flask</span>,
