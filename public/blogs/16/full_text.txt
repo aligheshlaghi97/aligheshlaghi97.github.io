@@ -1,0 +1,12 @@
+𝗦𝗲𝘃𝗲𝗻 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀 𝗶𝗻 𝗦𝗲𝘃𝗲𝗻 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 – 𝗯𝘂𝘁 𝘄𝗶𝘁𝗵 𝗔𝗜
+
+I built a FastAPI backend + React frontend (both deployed) that recommends the right database for your project, inspired by Seven Databases in Seven Weeks book.
+
+🔎 How it works:
+- Utilizes Google Gemini embeddings and Qdrant vector search 
+- Answer 10 questions to receive the top 3 recommended databases 
+- Gemini-1.5-flash for polished explanations 
+
+🛠️ Lightweight: Runs on 1 vCPU / 1 GB RAM
+🌐 Try it here → https://aligheshlaghi97.github.io/choose-your-db-frontend/
+
