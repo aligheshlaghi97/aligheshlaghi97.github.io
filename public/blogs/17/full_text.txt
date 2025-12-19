@@ -1,0 +1,14 @@
+While everyone is talking about no-GIL and free-threaded mode in Python 3.14, I noticed an exciting async-related change.
+
+In previous versions, gather() API was often slightly faster than TaskGroup() API.
+
+But with Python 3.14, both now run at almost identical speed on I/O-heavy workloads.
+
+This means we can use structured concurrency (TaskGroup) confidently for safer, more predictable async code — without any runtime penalty.
+
+A quiet but meaningful improvement for anyone building async systems.
+
+The code below can be run with both Python 3.13 and 3.14 to see the async improvements in action — where gather() and TaskGroup() run about 20–40% faster in 3.14, now performing almost equally on I/O-bound tasks.
+
+
+#Python #Asyncio #Performance
