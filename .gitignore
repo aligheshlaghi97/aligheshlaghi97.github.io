@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -8,16 +6,19 @@
 # testing
 /coverage
 
-# # production
+# production build (published from the gh-pages branch, not from main)
 /build
 
-# misc
-.DS_Store
+# local env files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# misc
+.DS_Store
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.eslintcache

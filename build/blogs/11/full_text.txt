@@ -1,7 +1,0 @@
-Optimizing Python Performance: Cython, Numba and Julia
-
-The Two Culture Problem highlights the challenge of bridging the gap between developers focused on efficient code and scientists needing high-performance solutions. In this post, I explore how tools like Cython, Numba, and Julia can help optimize Python for computational tasks, improving speed and efficiency.
-
-The ideas in this post were inspired by an insightful article I came across, and I've borrowed an image from it. You can check it out here: https://scientificcoder.com/how-to-solve-the-two-language-problem
-
-Check out the slides for a detailed comparison of these tools in action.
